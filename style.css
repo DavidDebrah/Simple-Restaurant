@@ -1,0 +1,134 @@
+.navbar .container {
+    justify-content: space-between;
+}
+
+.navbar .socialMedia button {
+    height: 30px;
+    width: 30px;
+    background: black;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 2px 2px;
+}
+
+.navbar .socialMedia button:hover {
+    transform: translateY(-3px);
+    background: red;
+}
+
+#navbarNavDropdown {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+}
+
+#navbarNavDropdown a:hover {
+    font-weight: bolder;
+    color: blue;
+}
+
+#dropdown a {
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#dropdown a:hover {
+    color: rgb(79, 79, 128);
+}
+
+.carousel-item img {
+    height: 75vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    top: 20px;
+    background: rgba(0, 0, 0, 0.48);
+    max-width: 450px;
+    margin: auto;
+    border-radius: 10px;
+    height: 180px;
+}
+
+.carousel-caption h5 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#it {
+    color: red;
+}
+
+.card-body form label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.item {
+    padding-top: 5px;
+    font-size: 22px;
+}
+
+.price {
+    color: #3455ae;
+    font-size: 18px;
+}
+
+#payNow {
+    display: none;
+}
+
+.payNow-active {
+    display: initial !important;
+}
+
+#payNow-container {
+    max-width: 90%;
+    box-shadow: 0px 3px 4px grey;
+    margin: auto;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+#p3,
+#p4,
+#p5 {
+    display: none;
+}
+
+.p3-active,
+.p4-active,
+.p5-active {
+    display: initial !important;
+}
+
+#backToTop {
+    position: fixed;
+    right: 0;
+    margin: 20px;
+    top: 85%;
+    display: none;
+}
+
+#backToTop button {
+    height: 35px;
+    width: 25px;
+    background: rgb(0, 98, 255);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.scroll-active {
+    display: initial !important;
+}
