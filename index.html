@@ -13,6 +13,8 @@
 
 <body>
 
+
+
     <!---Navbar Start-->
     <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
         <div class="container">
@@ -21,27 +23,56 @@
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav m-auto">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
+
+
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Menu</a>
                     </li>
+
+                    <!-- Dropdown menu start -->
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  More
-                </a>
-                        <ul class="dropdown-menu" id="dropdown">
-                            <li><a class="dropdown-item" href="#readMore2"><i class="bi bi-bag-heart-fill"></i>    Buy Now</a></li>
-                            <li><a class="dropdown-item" href="gallery.html" target="_blank"><i class="bi bi-images"></i>    Gallery</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-share"></i>    Invite</a></li>
-                            <li><a class="dropdown-item" href="tel: +233543619157"><i class="bi bi-telephone-fill"></i>    Contact Us</a></li>
+                            More
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#readMore2"><i class="bi bi-bag-heart-fill" ></i>    Buy Now</a>
+                            </li>
+
+                            <hr class="dropdown-divider">
+
+                            <li>
+                                <a class="dropdown-item" href="gallery.html" target="_blank"><i class="bi bi-images"></i>    Gallery</a>
+                            </li>
+
+                            <hr class="dropdown-divider">
+
+                            <li>
+                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share_modal"><i class="bi bi-share"></i>    Invite</a>
+                            </li>
+
+                            <hr class="dropdown-divider">
+
+                            <li>
+                                <a class="dropdown-item" href="tel: +233543619157"><i class="bi bi-telephone-fill"></i>    Contact Us</a>
+                            </li>
+
                         </ul>
                     </li>
+
+                    <!-- Dropdwon menu End -->
+
+
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
@@ -58,9 +89,38 @@
             </div>
         </div>
 
+
+
     </nav>
 
     <!---Navbar End-->
+
+    <!-- Share Modal Start -->
+    <div class="modal fade" id="share_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="share_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="share_modalLabel">Share via</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <h1>Share Modal Here</h1> -->
+
+                    <button class="btn btn-primary"><a class="dropdown-item" href="#"><i class="bi bi-facebook"></i>  Facebook</a></button>
+                    <button class="btn btn-success"><a class="dropdown-item" href="#"><i class="bi bi-whatsapp"></i>  WhatsApp</a></button>
+                    <button class="btn btn-danger"><a class="dropdown-item" href="#"><i class="bi bi-instagram"></i>  Instagram</a></button>
+                    <button class="btn btn-danger"><a class="dropdown-item" href="#"><i class="bi bi-tiktok"></i>  TikTok</a></button>
+
+
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Share Modal End -->
 
     <!--Home Start-->
 
